@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<!--=============================== header ========================================-->
+	<div class="header">
+		<div class="container">
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="">
+			</a>
+			<ul class="header__nav">
+				<li><a href="#main">Главная</a></li>
+				<li><a href="#program">Программа курса</a></li>
+				<li><a href="#price">Стоимость</a></li>
+				<li><a href="#reviews">Отзывы</a></li>
+			</ul>
+			<div class="header__btns">
+				<button class="btn">Заказать обратный звонок</button>
+				<a href="/" class="btn border">Вход</a>
+			</div>
+		</div>
+	</div>
+	<!--===============================END header ========================================-->
+	{% block content %}
+		
+	{% endblock %}
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/mask.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
