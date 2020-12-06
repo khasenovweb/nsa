@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -24,9 +25,10 @@
                 <li><a href="#reviews">Отзывы</a></li>
             </ul>
             <div class="header__btns">
-                <button class="btn">Заказать обратный звонок</button>
+                <button class="btn" data-modal-show="1">Заказать обратный звонок</button>
                 <a href="/" class="btn border">Вход</a>
             </div>
+            <div class="header__hamburger" data-mobile-menu-show="1"></div>
         </div>
     </div>
     <!--===============================END header ========================================-->
@@ -65,50 +67,51 @@
                         <div class="hero__formblock__form__col">
                             <input data-mask="phone" class="input" type="text" placeholder="Введите ваш телефон">
                         </div>
-                        <div class="hero__formblock__form__col">
+                        <div class="hero__formblock__form__col hero__formblock__form__col__btn">
                             <button class="btn red">Отправить</button>
                         </div>
-                    </div>
-                    <div class="hero__formblock__form__checkbox">
-                        <label for="checkbox1" class="checkbox__label">
-                            <input type="checkbox" id="checkbox1">
-                            <div class="box">
-                                <div class="box__circle"></div>
-                            </div>
-                        </label>
-                        <div class="hero__formblock__form__checkbox__text">Отправляя заявку вы соглашаетесь с <a href="/">политикой конфинденциальности</a></div>
+                        <div class="hero__formblock__form__checkbox">
+                            <label for="checkbox1" class="checkbox__label">
+                                <input type="checkbox" id="checkbox1">
+                                <div class="box">
+                                    <div class="box__circle"></div>
+                                </div>
+                            </label>
+                            <div class="hero__formblock__form__checkbox__text">Отправляя заявку вы соглашаетесь с <a href="/">политикой конфинденциальности</a></div>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
-        <div class="wave__bottom"></div>
     </div>
     <!--===============================END hero ========================================-->
     <!--=============================== sec1 ========================================-->
     <div class="sec1">
+        <div class="wave__top"></div>
+        <div class="wave__bottom"></div>
         <div class="container">
-            <div class="sec1__videoblock">
-                <div class="sec1__videoblock__video">
-                    <img src="img/video__icon.png" alt="" class="sec1__videoblock__video__icon">
-                    <iframe src="https://player.vimeo.com/video/477650784?autoplay=0&amp;title=0&amp;byline=0&amp;portrait=0" style="position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;" frameborder="0" allow="fullscreen" allowfullscreen=""></iframe>
+            <h2 class="sec1__title">Пару слов о курсе</h2>
+            <div class="sec1__content">
+                <div class="sec1__videoblock">
+                    <div class="sec1__videoblock__video">
+                        <img src="img/video__icon.png" alt="" class="sec1__videoblock__video__icon">
+                        <iframe src="https://player.vimeo.com/video/477650784?autoplay=0&amp;title=0&amp;byline=0&amp;portrait=0" style="position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;" frameborder="0" allow="fullscreen" allowfullscreen=""></iframe>
+                    </div>
                 </div>
-            </div>
-            <div class="sec1__text">
-                <h2 class="sec1__title">Пару слов о курсе</h2>
-                <p>С первых лет жизни ребёнка закладывается <strong>фундамент отношений с едой</strong> – формируются привычки, предпочтения и принципы. <strong>Для каждого родителя очень важно</strong> суметь грамотно донести ценность здорового образа жизни своему ребёнку в любом возрасте.</p>
-                <p>Именно для этого мы разработали отдельный курс, в котором расскажем <strong>об особенностях развития</strong> организма и психики человека на каждом этапе взросления: <strong>с самого рождения до 17 лет.</strong></p>
+                <div class="sec1__text">
+                    <p>С первых лет жизни ребёнка закладывается <strong>фундамент отношений с едой</strong> – формируются привычки, предпочтения и принципы. <strong>Для каждого родителя очень важно</strong> суметь грамотно донести ценность здорового образа жизни своему ребёнку в любом возрасте.</p>
+                    <p>Именно для этого мы разработали отдельный курс, в котором расскажем <strong>об особенностях развития</strong> организма и психики человека на каждом этапе взросления: <strong>с самого рождения до 17 лет.</strong></p>
+                </div>
             </div>
         </div>
     </div>
     <!--===============================END sec1 ========================================-->
     <!--=============================== sec2 ========================================-->
     <div class="sec2" id="program">
-        <div class="wave__bottom"></div>
-        <div class="wave__top"></div>
         <div class="container">
             <h2 class="sec__title">Разберём важные темы поэтапно</h2>
             <div class="sec2__items">
@@ -258,18 +261,18 @@
                             <div class="hero__formblock__form__col">
                                 <input data-mask="phone" class="input" type="text" placeholder="Введите ваш телефон">
                             </div>
-                            <div class="hero__formblock__form__col">
+                            <div class="hero__formblock__form__col hero__formblock__form__col__btn">
                                 <button class="btn red">Отправить</button>
                             </div>
-                        </div>
-                        <div class="hero__formblock__form__checkbox">
-                            <label for="checkbox3" class="checkbox__label">
-                                <input type="checkbox" id="checkbox3">
-                                <div class="box">
-                                    <div class="box__circle"></div>
-                                </div>
-                            </label>
-                            <div class="hero__formblock__form__checkbox__text">Отправляя заявку вы соглашаетесь с <a href="/">политикой конфинденциальности</a></div>
+                            <div class="hero__formblock__form__checkbox">
+                                <label for="checkbox3" class="checkbox__label">
+                                    <input type="checkbox" id="checkbox3">
+                                    <div class="box">
+                                        <div class="box__circle"></div>
+                                    </div>
+                                </label>
+                                <div class="hero__formblock__form__checkbox__text">Отправляя заявку вы соглашаетесь с <a href="/">политикой конфинденциальности</a></div>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -279,6 +282,7 @@
     <!--===============================END sec2 ========================================-->
     <!--=============================== sec3 ========================================-->
     <div class="sec3">
+        <div class="wave__top"></div>
         <div class="container">
             <h2 class="sec__title">Разберём важные темы поэтапно</h2>
             <div class="sec3__content">
@@ -398,18 +402,18 @@
                             <div class="hero__formblock__form__col">
                                 <input data-mask="phone" class="input" type="text" placeholder="Введите ваш телефон">
                             </div>
-                            <div class="hero__formblock__form__col">
+                            <div class="hero__formblock__form__col hero__formblock__form__col__btn">
                                 <button class="btn red">Отправить</button>
                             </div>
-                        </div>
-                        <div class="hero__formblock__form__checkbox">
-                            <label for="checkbox2" class="checkbox__label">
-                                <input type="checkbox" id="checkbox2">
-                                <div class="box">
-                                    <div class="box__circle"></div>
-                                </div>
-                            </label>
-                            <div class="hero__formblock__form__checkbox__text">Отправляя заявку вы соглашаетесь с <a href="/">политикой конфинденциальности</a></div>
+                            <div class="hero__formblock__form__checkbox">
+                                <label for="checkbox2" class="checkbox__label">
+                                    <input type="checkbox" id="checkbox2">
+                                    <div class="box">
+                                        <div class="box__circle"></div>
+                                    </div>
+                                </label>
+                                <div class="hero__formblock__form__checkbox__text">Отправляя заявку вы соглашаетесь с <a href="/">политикой конфинденциальности</a></div>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -419,6 +423,7 @@
     <!--===============================END sec4 ========================================-->
     <!--=============================== sec5 ========================================-->
     <div class="sec3 sec5">
+        <div class="wave__bottom"></div>
         <div class="container">
             <h2 class="sec__title">Как проходит обучение</h2>
             <div class="sec3__content">
@@ -506,8 +511,6 @@
     <!--===============================END sec5 ========================================-->
     <!--=============================== sec6 ========================================-->
     <div class="sec6">
-        <div class="wave__bottom"></div>
-        <div class="wave__top"></div>
         <div class="container">
             <h2 class="sec__title">Преподаватели курса</h2>
             <div class="sec6__slider owl-carousel">
@@ -627,6 +630,8 @@
     <!--===============================END sec6 ========================================-->
     <!--=============================== sec7 ========================================-->
     <div class="sec7" id="reviews">
+        <div class="wave__bottom"></div>
+        <div class="wave__top"></div>
         <div class="container">
             <h2 class="sec__title">Отзывы о нас</h2>
             <div class="sec7__slider owl-carousel">
@@ -637,18 +642,12 @@
                 <img src="img/sec7__slide-4.png" alt="">
                 <img src="img/sec7__slide-4.png" alt="">
                 <img src="img/sec7__slide-4.png" alt="">
-                <img src="img/sec7__slide-4.png" alt="">
-                <img src="img/sec7__slide-4.png" alt="">
-                <img src="img/sec7__slide-4.png" alt="">
-                <img src="img/sec7__slide-4.png" alt="">
             </div>
         </div>
     </div>
     <!--===============================END sec7 ========================================-->
     <!--=============================== sec8 ========================================-->
     <div class="sec8">
-        <div class="wave__top"></div>
-        <div class="wave__bottom"></div>
         <div class="container">
             <div class="sec8__content">
                 <img src="img/sec8__img.png" alt="" class="sec8__img">
@@ -672,18 +671,18 @@
                             <div class="hero__formblock__form__col">
                                 <input data-mask="phone" class="input" type="text" placeholder="Введите ваш телефон">
                             </div>
-                            <div class="hero__formblock__form__col">
+                            <div class="hero__formblock__form__col hero__formblock__form__col__btn">
                                 <button class="btn red">Отправить</button>
                             </div>
-                        </div>
-                        <div class="hero__formblock__form__checkbox">
-                            <label for="checkbox4" class="checkbox__label">
-                                <input type="checkbox" id="checkbox4">
-                                <div class="box">
-                                    <div class="box__circle"></div>
-                                </div>
-                            </label>
-                            <div class="hero__formblock__form__checkbox__text">Отправляя заявку вы соглашаетесь с <a href="/">политикой конфинденциальности</a></div>
+                            <div class="hero__formblock__form__checkbox">
+                                <label for="checkbox4" class="checkbox__label">
+                                    <input type="checkbox" id="checkbox4">
+                                    <div class="box">
+                                        <div class="box__circle"></div>
+                                    </div>
+                                </label>
+                                <div class="hero__formblock__form__checkbox__text">Отправляя заявку вы соглашаетесь с <a href="/">политикой конфинденциальности</a></div>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -693,6 +692,7 @@
     <!--===============================END sec8 ========================================-->
     <!--=============================== footer ========================================-->
     <div class="footer">
+        <div class="wave__top"></div>
         <div class="container">
             <div class="footer__top">
                 <a href="/" class="header__logo">
@@ -705,7 +705,7 @@
                     <li><a href="#reviews">Отзывы</a></li>
                 </ul>
                 <div class="header__btns">
-                    <button class="btn">Заказать обратный звонок</button>
+                    <button class="btn" data-modal-show="1">Заказать обратный звонок</button>
                     <a href="/" class="btn border">Вход</a>
                 </div>
             </div>
@@ -716,6 +716,55 @@
         </div>
     </div>
     <!--===============================END footer ========================================-->
+    <!--=============================== modal ========================================-->
+    <div class="modal__wrapper" data-modal-wrapper="1">
+        <div class="modal" data-modal="1">
+            <div class="modal__close" data-modal-close="1">
+                <img src="img/modal__close.svg" alt="">
+            </div>
+            <div class="hero__formblock">
+                <img src="img/raketa.png" alt="" class="hero__formblock__raketa">
+                <div class="hero__formblock__title">Заказать обратный звонок</div>
+                <form action="" class="hero__formblock__form">
+                    <div class="hero__formblock__form__cols">
+                        <div class="hero__formblock__form__col">
+                            <input class="input" type="text" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="hero__formblock__form__col">
+                            <input data-mask="phone" class="input" type="text" placeholder="Введите ваш телефон">
+                        </div>
+                        <div class="hero__formblock__form__col hero__formblock__form__col__btn">
+                            <button class="btn red">Отправить</button>
+                        </div>
+                        <div class="hero__formblock__form__checkbox">
+                            <label for="checkbox7" class="checkbox__label">
+                                <input type="checkbox" id="checkbox7">
+                                <div class="box">
+                                    <div class="box__circle"></div>
+                                </div>
+                            </label>
+                            <div class="hero__formblock__form__checkbox__text">Отправляя заявку вы соглашаетесь с <a href="/">политикой конфинденциальности</a></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--===============================END modal ========================================-->
+    <!--=============================== mobile__menu ========================================-->
+    <div class="mobile__menu" data-mobile-menu="1">
+        <ul class="mobile__menu__links">
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#program">Программа курса</a></li>
+            <li><a href="#price">Стоимость</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+        </ul>
+        <div class="mobile__menu__btns">
+            <button class="btn" data-modal-show="1">Заказать обратный звонок</button>
+            <a href="/" class="btn border">Вход</a>
+        </div>
+    </div>
+    <!--===============================END mobile__menu ========================================-->
     <script src="js/jquery.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>

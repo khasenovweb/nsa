@@ -16,7 +16,9 @@
 	line-height: 110%;
 }
 .container {
-	max-width: 1280px;
+	//max-width: 1280px;
+	max-width: 1340px;
+	padding: 0 30px;
 	margin: 0 auto;
 }
 .header {
@@ -30,6 +32,12 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+}
+.header__logo {
+	width: 176px;
+	img {
+		width: 100%;
 	}
 }
 .header__nav {
@@ -104,20 +112,7 @@
 }
 .wave__bottom {
 	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 70px;
-	//height: 109px;
-	background-image: url(../img/wave__bottom.svg);
-	background-position: center bottom;
-	background-size: contain;
-	background-repeat: repeat-x;
-	z-index: 1;
-}
-.wave__top {
-	position: absolute;
-	top: 0;
+	bottom: -70px;
 	left: 0;
 	width: 100%;
 	height: 70px;
@@ -128,10 +123,24 @@
 	background-repeat: repeat-x;
 	z-index: 1;
 }
+.wave__top {
+	position: absolute;
+	top: -70px;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	//height: 109px;
+	background-image: url(../img/wave__bottom.svg);
+	background-position: center bottom;
+	background-size: contain;
+	background-repeat: repeat-x;
+	z-index: 1;
+}
 .hero__people {
 	position: absolute;
-	right: 0;
+	right: 30px;
 	bottom: 0;
+	z-index: 0;
 }
 .hero__title__before {
 	font-weight: bold;
@@ -144,17 +153,20 @@
 	font-size: 54px;
 	line-height: 110%;
 	margin-top: 17px;
+	z-index: 1;
 }
 
 .hero__desc {
 	line-height: 130%;
 	margin-top: 22px;
+	z-index: 1;
 }
 .hero__info {
 	display: flex;
 	align-items: center;
 	margin-top: 20px;
 	margin-left: -4px;
+	z-index: 1;
 }
 .hero__info__item {
 	display: flex;
@@ -188,7 +200,7 @@
 	border-radius: 5px;
 	box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
 	max-width: 694px;
-	padding: 34px 96px 43px 99px;
+	padding: 34px 46px 43px 99px;
 	margin-top: 30px;
 	position: relative;
 	z-index: 2;
@@ -211,11 +223,20 @@
 	margin-top: 13px;
 }
 .hero__formblock__form__cols {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(max-content, 0));
-	grid-gap: 14px;
+	// display: grid;
+	// grid-template-columns: repeat(auto-fill, minmax(max-content, 0));
+	// grid-gap: 14px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 	.input {
 		width: 200px;
+	}
+}
+.hero__formblock__form__col {
+	margin-right: 14px;
+	&:nth-child(3) {
+		margin-right: 0;
 	}
 }
 .hero__formblock__form__checkbox {
@@ -263,7 +284,9 @@
 	float: left;
 	transition: 0.2s;
 }
-
+.sec1__videoblock {
+	margin-top: -64px;
+}
 .sec1__videoblock__video {
 	width: 407px;
 	height: 240px;
@@ -279,17 +302,25 @@
 .sec1 {
 	padding: 50px 0;
 	padding-bottom: 90px;
+	position: relative;
 	.container {
-		display: grid;
-		grid-template-columns: 407px 1fr;
-		grid-gap: 50px;
-		align-items: center;
+		// display: grid;
+		// grid-template-columns: 407px 1fr;
+		// grid-gap: 50px;
+		// align-items: center;
 	}
+}
+.sec1__content {
+	display: grid;
+	grid-template-columns: 407px 1fr;
+	grid-gap: 50px;
+	margin-top: 20px;
 }
 .sec1__title {
 	font-weight: bold;
 	font-size: 40px;
 	line-height: 110%;
+	padding-left: 454px;
 }
 .sec1__text {
 	display: grid;
@@ -393,7 +424,7 @@
 		margin-top: 20px;
 	}
 	.hero__formblock__form__cols .input {
-		width: 357px;
+		width: 347px;
 	}
 }
 .formblock__img {
@@ -426,6 +457,7 @@
 
 .sec3 {
 	padding-top: 57px;
+	position: relative;
 }
 .sec3__content {
 	display: grid;
@@ -483,6 +515,7 @@
 }
 .sec3__accordion__item__head__arrow {
 	width: 12px;
+	min-width: 12px;
 	height: 8px;
 	background-image: url(../img/accordion__arrow__bottom.svg);
 	margin-left: auto;
@@ -517,6 +550,7 @@
 
 .sec5 {
 	padding-bottom: 78px;
+	position: relative;
 	.sec3__accordion__item__text {
 		padding-left: 26px;
 	}
@@ -653,6 +687,7 @@
 .sec7 {
 	padding-top: 10px;
 	padding-bottom: 20px;
+	position: relative;
 	.sec__title {
 		text-align: center;
 	}
@@ -679,6 +714,7 @@
 	}
 	button.owl-dot {
 		width: 15px;
+		min-width: 15px;
 		height: 15px;
 		background: #C4C4C4;
 		border-radius: 100%;
@@ -706,10 +742,7 @@
 	.formblock__img {
 		left: initial;
 	}
-	.wave__bottom {
-		background-image: url(../img/wave__bottom__black.svg);
-		bottom: -3px;
-	}
+	
 }
 .sec8__content {
 	display: grid;
@@ -736,10 +769,15 @@
 	background-color: #383134;
 	padding-top: 50px;
 	padding-bottom: 65px;
+	position: relative;
 	.header__nav {
 		* {
 			color: white;
 		}
+	}
+	.wave__top{
+		background-image: url(../img/wave__bottom__black.svg);
+		top: -69px;
 	}
 }
 .footer__top {
@@ -758,5 +796,111 @@
 			line-height: 16px;
 			color: #645E61;
 			text-decoration: none;
+	}
+}
+
+.modal__wrapper {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	left: 0;
+	top: 0;
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	opacity: 0;
+	transition: 0.3s;
+	display: none;
+	&.active {
+		opacity: 1;
+	}
+}
+.modal {
+	margin-top: 192px;
+	position: relative;
+	transition: 0.3s;
+	transform: translateY(-400px);
+	opacity: 0;
+	&.active {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	.hero__formblock {
+		margin-top: 0;
+	}
+}
+.modal__close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 3;
+	padding: 17px;
+	cursor: pointer;
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.thanks {
+	height: ~"calc(100vh - 284px)";
+	.container {
+		height: 100%;
+		padding-top: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.btn {
+		margin-top: 30px;
+	}
+}
+.header__hamburger {
+	display: none;
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-image: url(../img/hamburger.svg);
+	margin-right: -15px;
+	&.active {
+		background-image: url(../img/mobile__nav__close.svg);
+	}
+}
+
+.mobile__menu {
+	position: fixed;
+	left: 0;
+	top: 60px;
+	width: 100%;
+	background-color: #fff;
+	z-index: 2;
+	padding: 30px;
+	transform: translateY(-100%);
+	transition: 0.3s;
+	&.active {
+		transform: translateY(0);
+	}
+}
+.mobile__menu__links {
+	list-style-type: none;
+	text-align: center;
+	a {
+		text-align: center;
+		text-decoration: none;
+		padding: 5px 0;
+		display: block;
+	}
+}
+.mobile__menu__btns {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	.btn {
+		margin-bottom: 20px;
 	}
 }

@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<!--=============================== header ========================================-->
@@ -22,9 +23,10 @@
 				<li><a href="#reviews">Отзывы</a></li>
 			</ul>
 			<div class="header__btns">
-				<button class="btn">Заказать обратный звонок</button>
+				<button class="btn" data-modal-show="1">Заказать обратный звонок</button>
 				<a href="/" class="btn border">Вход</a>
 			</div>
+			<div class="header__hamburger" data-mobile-menu-show="1"></div>
 		</div>
 	</div>
 	<!--===============================END header ========================================-->
@@ -32,6 +34,83 @@
 		
 	{% endblock %}
 	
+	<!--=============================== footer ========================================-->
+<div class="footer">
+	<div class="wave__top"></div>
+    <div class="container">
+        <div class="footer__top">
+            <a href="/" class="header__logo">
+                <img src="img/logo-white.svg" alt="">
+            </a>
+            <ul class="header__nav">
+                <li><a href="#main">Главная</a></li>
+				<li><a href="#program">Программа курса</a></li>
+				<li><a href="#price">Стоимость</a></li>
+				<li><a href="#reviews">Отзывы</a></li>
+            </ul>
+            <div class="header__btns">
+                <button class="btn" data-modal-show="1">Заказать обратный звонок</button>
+                <a href="/" class="btn border">Вход</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <a href="">Политика конфинденциальности</a>
+            <a href="">Реквизиты</a>
+        </div>
+    </div>
+</div>
+<!--===============================END footer ========================================-->
+
+<!--=============================== modal ========================================-->
+	<div class="modal__wrapper" data-modal-wrapper="1">
+		<div class="modal" data-modal="1">
+			<div class="modal__close" data-modal-close="1">
+				<img src="img/modal__close.svg" alt="">
+			</div>
+			<div class="hero__formblock">
+				<img src="img/raketa.png" alt="" class="hero__formblock__raketa">
+				<div class="hero__formblock__title">Заказать обратный звонок</div>
+				<form action="" class="hero__formblock__form">
+					<div class="hero__formblock__form__cols">
+						<div class="hero__formblock__form__col">
+							<input class="input" type="text" placeholder="Введите ваше имя">
+						</div>
+						<div class="hero__formblock__form__col">
+							<input data-mask="phone" class="input" type="text" placeholder="Введите ваш телефон">
+						</div>
+						<div class="hero__formblock__form__col hero__formblock__form__col__btn">
+							<button class="btn red">Отправить</button>
+						</div>
+						<div class="hero__formblock__form__checkbox">
+							<label for="checkbox7" class="checkbox__label">
+								<input type="checkbox" id="checkbox7">
+								<div class="box">
+									<div class="box__circle"></div>
+								</div>
+							</label>
+							<div class="hero__formblock__form__checkbox__text">Отправляя заявку вы соглашаетесь с <a href="/">политикой конфинденциальности</a></div>
+						</div>
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--===============================END modal ========================================-->
+	<!--=============================== mobile__menu ========================================-->
+	<div class="mobile__menu" data-mobile-menu="1">
+		<ul class="mobile__menu__links">
+			<li><a href="#main">Главная</a></li>
+			<li><a href="#program">Программа курса</a></li>
+			<li><a href="#price">Стоимость</a></li>
+			<li><a href="#reviews">Отзывы</a></li>
+		</ul>
+		<div class="mobile__menu__btns">
+			<button class="btn" data-modal-show="1">Заказать обратный звонок</button>
+			<a href="/" class="btn border">Вход</a>
+		</div>
+	</div>
+	<!--===============================END mobile__menu ========================================-->
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
