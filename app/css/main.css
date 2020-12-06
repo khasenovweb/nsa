@@ -994,3 +994,27 @@
 .mobile__menu__btns .btn {
   margin-bottom: 20px;
 }
+.modal__wrapper__2 .hero__formblock__form__cols {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+.modal__wrapper__2 .hero__formblock__form__col {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+.modal__wrapper__2 .hero__formblock__form__col input {
+  width: 100%;
+}
+.modal__wrapper__2 .hero__formblock__form__checkbox {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  -webkit-box-ordinal-group: 2;
+          order: 1;
+}
+.modal__wrapper__2 .hero__formblock__form__col__btn {
+  -webkit-box-ordinal-group: 3;
+          order: 2;
+  margin-bottom: 0;
+}

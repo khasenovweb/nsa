@@ -102,6 +102,7 @@ $(document).ready(function(){
     });
     //================END Проверка чекбокса=======================
 
+    //================ Модальное окно =======================
     $('[data-modal-show]').click(function(){
         var id = $(this).attr('data-modal-show');
         $('[data-modal-wrapper="'+id+'"]').css('display', 'flex');
@@ -128,8 +129,9 @@ $(document).ready(function(){
             $('[data-modal-wrapper="'+id+'"]').css('display', 'none');
         }, 300);
     });
+    //================END Модальное окно =======================
 
-
+    //================ Мобильное меню  =======================
     $('[data-mobile-menu-show]').click(function(){
         var id = $(this).attr('data-mobile-menu-show');
         $(this).toggleClass('active');
@@ -140,4 +142,5 @@ $(document).ready(function(){
         $('[data-mobile-menu="'+id+'"]').removeClass('active');
         $('[data-mobile-menu-show="'+id+'"]').removeClass('active');
     });
+    //================END Мобильное меню  =======================
 });
