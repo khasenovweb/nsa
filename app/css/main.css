@@ -661,6 +661,7 @@
   -webkit-box-align: center;
           align-items: center;
   margin-top: 64px;
+  flex-wrap: wrap;
 }
 .sec6__slider button.owl-dot {
   width: 15px;
@@ -668,6 +669,7 @@
   background: #C4C4C4;
   border-radius: 100%;
   margin: 0 7.5px;
+  margin-bottom: 10px;
 }
 .sec6__slider button.owl-dot.active {
   background-color: #066781;
@@ -780,6 +782,7 @@
   -webkit-box-align: center;
           align-items: center;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 .sec7__slider button.owl-dot {
   width: 15px;
@@ -788,6 +791,7 @@
   background: #C4C4C4;
   border-radius: 100%;
   margin: 0 7.5px;
+  margin-bottom: 10px;
 }
 .sec7__slider button.owl-dot.active {
   background-color: #066781;

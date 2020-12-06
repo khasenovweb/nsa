@@ -523,13 +523,9 @@
     <div class="container">
         <h2 class="sec__title">Отзывы о нас</h2>
         <div class="sec7__slider owl-carousel">
-            <img src="img/sec7__slide-1.png" alt="">
-            <img src="img/sec7__slide-2.png" alt="">
-            <img src="img/sec7__slide-3.png" alt="">
-            <img src="img/sec7__slide-4.png" alt="">
-            <img src="img/sec7__slide-4.png" alt="">
-            <img src="img/sec7__slide-4.png" alt="">
-            <img src="img/sec7__slide-4.png" alt="">
+            {% for i in range(31, data.numberOfRooms) -%}
+            <img src="img/reviews/{{i}}.png" alt="">
+            {%- endfor %}
         </div>
     </div>
 </div>
