@@ -29,11 +29,15 @@ $(document).ready(function(){
     }else {
         $('[data-accordion-program-content]').slideDown(300);
     }
+
+    var windowwidth = $(window).width();
     $(window).resize(function(){
-        if( $(window).width() <= '1230' ) {
-            $('[data-accordion-program-content]').slideUp(300);
-        }else {
-            $('[data-accordion-program-content]').slideDown(300);
+        if( $(window).width() != windowwidth ) {
+            if( $(window).width() <= '1230' ) {
+                $('[data-accordion-program-content]').slideUp(300);
+            }else {
+                $('[data-accordion-program-content]').slideDown(300);
+            }
         }
     });
     //============END Аккордион==========================
