@@ -189,6 +189,7 @@
     .sec8__content {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         padding-left: 0;
     }
     .sec8__text {
@@ -240,7 +241,15 @@
     }
 
 }
-
+@media screen and (max-width: 900px) {
+    .wave__bottom {
+        bottom: -40px;
+        height: 40px;
+    }
+    .wave__top {
+        top: 67px;
+    }
+}
 @media screen and (max-width: 700px) {
     .sec4__items {
         grid-template-columns: 1fr;

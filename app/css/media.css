@@ -197,6 +197,8 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
+    -webkit-box-align: start;
+            align-items: flex-start;
     padding-left: 0;
   }
   .sec8__text {
@@ -249,6 +251,15 @@
   }
   .sec3__accordion__item__head__icon {
     margin-right: 15px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wave__bottom {
+    bottom: -40px;
+    height: 40px;
+  }
+  .wave__top {
+    top: 67px;
   }
 }
 @media screen and (max-width: 700px) {
