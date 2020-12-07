@@ -10,6 +10,9 @@
   }
 }
 @media screen and (max-width: 1230px) {
+  .sec2__item__head {
+    cursor: pointer;
+  }
   .hero__formblock__title {
     font-size: 18px;
   }
@@ -278,6 +281,15 @@
   }
   .sec1__videoblock__video {
     width: 100%;
+  }
+  .sec4__item {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
   }
 }
 @media screen and (max-width: 500px) {

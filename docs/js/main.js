@@ -12,6 +12,30 @@ $(document).ready(function(){
         $(el).find('[data-accordion-content]').eq(0).slideDown();
         $(el).find('[data-accordion-link]').eq(0).addClass('active');
     });
+
+
+    
+    $('[data-accordion-program-link]').click(function(){
+        if( $(window).width() <= '1230' ) {
+            var id = $(this).attr('data-accordion-program-link');
+            var thiss = $(this);
+            $('[data-accordion-program-content="'+id+'"]').slideToggle(300);
+            thiss.toggleClass('active');
+        }
+        
+    });
+    if( $(window).width() <= '1230' ) {
+        $('[data-accordion-program-content]').slideUp(300);
+    }else {
+        $('[data-accordion-program-content]').slideDown(300);
+    }
+    $(window).resize(function(){
+        if( $(window).width() <= '1230' ) {
+            $('[data-accordion-program-content]').slideUp(300);
+        }else {
+            $('[data-accordion-program-content]').slideDown(300);
+        }
+    });
     //============END Аккордион==========================
 
     $('.sec6__slider').owlCarousel({
@@ -19,15 +43,19 @@ $(document).ready(function(){
         margin: 30,
         nav: true,
         navText: ["<img src=\"img/slider__arrow__left.svg\">","<img src=\"img/slider__arrow__right.svg\" >"],
+        dots: false,
         responsive: {
             0: {
               items: 1,
+              
             },
             700: {
                 items: 2,
             },
             1000: {
                 items: 3,
+                dots: true
+
             },
             1400: {
              items: 4,
@@ -40,6 +68,7 @@ $(document).ready(function(){
         margin: 30,
         nav: true,
         navText: ["<img src=\"img/slider__arrow__left.svg\">","<img src=\"img/slider__arrow__right.svg\" >"],
+        dots: false,
         responsive: {
             0: {
               items: 1,
@@ -49,6 +78,7 @@ $(document).ready(function(){
             },
             1000: {
                 items: 3,
+                dots: true
             },
             1400: {
              items: 4,
