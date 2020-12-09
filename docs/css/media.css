@@ -10,6 +10,12 @@
   }
 }
 @media screen and (max-width: 1230px) {
+  .sec1 {
+    padding: 50px 0;
+  }
+  .sec3__accordion {
+    grid-template-columns: 100%;
+  }
   .sec2__item__head {
     cursor: pointer;
   }
@@ -33,9 +39,6 @@
   }
   .header__logo {
     width: 124px;
-  }
-  .hero {
-    padding-bottom: 100px;
   }
   .hero__people {
     position: initial;
@@ -166,7 +169,7 @@
     margin-top: 30px;
   }
   .sec2 {
-    padding-top: 100px;
+    padding-top: 50px;
   }
   .sec2 .formblock {
     margin-top: 20px;
@@ -183,7 +186,7 @@
     width: 100%;
   }
   .sec3__content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
   .sec4__items {
     grid-template-columns: 1fr 1fr 1fr;
@@ -252,6 +255,9 @@
   .sec3__accordion__item__head__icon {
     margin-right: 15px;
   }
+  .sec6 {
+    padding: 50px 0;
+  }
 }
 @media screen and (max-width: 900px) {
   .wave__bottom {
@@ -259,7 +265,7 @@
     height: 40px;
   }
   .wave__top {
-    top: 67px;
+    top: -67px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -335,7 +341,7 @@
             transform: translateX(-50%);
   }
   .wave__bottom {
-    bottom: -30px;
+    bottom: -39px;
     height: 40px;
   }
   .wave__top {
@@ -348,5 +354,47 @@
   }
   .modal {
     max-width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .header__btns .btn {
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero__title {
+    font-size: 25px;
+  }
+  .sec3__accordion__item__head__title {
+    font-size: 14px;
+  }
+  .sec3__accordion__item__head__icon {
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .sec6__slider__item__title {
+    font-size: 16px;
+  }
+  .sec6__slider button.owl-next {
+    right: -25px;
+  }
+  .sec6__slider button.owl-prev {
+    left: -25px;
+  }
+  .sec7__slider button.owl-next {
+    right: -25px;
+  }
+  .sec7__slider button.owl-prev {
+    left: -25px;
   }
 }
